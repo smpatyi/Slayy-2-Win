@@ -45,3 +45,6 @@ TagManager:
   - name: Arrows
     uniqueID: 4061032877
     locked: 0
+  - name: Victory
+    uniqueID: 1407511207
+    locked: 0
