@@ -8,10 +8,7 @@ public class NoteObject : MonoBehaviour
 
     public KeyCode keyToPress;
 
-    public GameObject downVictory;
-    public GameObject leftVictory;
-    public GameObject rightVictory;
-    public GameObject upVictory;
+    public GameObject victory;
 
     // Start is called before the first frame update
     void Start()
@@ -33,30 +30,14 @@ public class NoteObject : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "Activator") {
             canBePressed = true;
-            // if(Input.GetKeyDown(keyToPress.DownArrow)){
-            //     downVictory.SetActive(true);
-            // } else if(Input.GetKeyDown(keyToPress.UpArrow)){
-            //     upVictory.SetActive(true);
-            // } else if(Input.GetKeyDown(keyToPress.LeftArrow)){
-            //     leftVictory.SetActive(true);
-            // } else if(Input.GetKeyDown(keyToPress.RightArrow)){
-            //     rightVictory.SetActive(true);
-            // }
+            victory.SetActive(true);
         }
     }
 
     private void OnTriggerExit2D(Collider2D other) {
         if(other.tag == "Activator") {
             canBePressed = false;
-            // if(Input.GetKeyUp(keyToPress.DownArrow)){
-            //     downVictory.SetActive(false);
-            // } else if(Input.GetKeyUp(keyToPress.UpArrow)){
-            //     upVictory.SetActive(false);
-            // } else if(Input.GetKeyUp(keyToPress.LeftArrow)){
-            //     leftVictory.SetActive(false);
-            // } else if(Input.GetKeyUp(keyToPress.RightArrow)){
-            //     rightVictory.SetActive(false);
-            // }
+            victory.SetActive(false);
         }
     }
 }
