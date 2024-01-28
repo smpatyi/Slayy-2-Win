@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/StageScreen.unity
+    path: Assets/Scenes/StageScreenBackup.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/DressingRoomScreen.unity
     guid: ddf2b2b645ffc4ccc96b5aade1b58969
+  - enabled: 1
+    path: Assets/Scenes/StageScreen.unity
+    guid: 2863ea3ae6fab4e2ca8667f083a2677d
   m_configObjects: {}
