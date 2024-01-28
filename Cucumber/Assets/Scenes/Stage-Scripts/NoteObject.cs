@@ -54,6 +54,8 @@ public class NoteObject : MonoBehaviour
                 // OnTriggerStay2D();
 
                 theSR.sprite = successImage;
+
+                GameManager.instance.NoteHit();
                 
             }
 
@@ -88,7 +90,7 @@ public class NoteObject : MonoBehaviour
             canBePressed = false;
             // isMoving = false;
             
-
+            GameManager.instance.NoteMissed();
         }
     }
 }
