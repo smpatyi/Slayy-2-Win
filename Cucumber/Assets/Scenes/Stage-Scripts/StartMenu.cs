@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
 public void PlayGame() {
-    SceneManager.LoadSceneAsync(2);
+    SceneManager.LoadSceneAsync(1);
 }
         
     

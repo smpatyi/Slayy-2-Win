@@ -9,8 +9,8 @@ public class NoteObject : MonoBehaviour
     public KeyCode keyToPress;
 
     private SpriteRenderer theSR;
-    public Sprite defaultImage;
-    public Sprite successImage;
+    public Sprite defaultArrow;
+    public Sprite successArrow;
 
     // public float timer;
 
@@ -24,7 +24,7 @@ public class NoteObject : MonoBehaviour
         // beatTempo = beatTempo / 60f;
 
         theSR = GetComponent<SpriteRenderer>();
-        theSR.sprite = defaultImage;
+        theSR.sprite = defaultArrow;
 
         // if(!isMoving) {
         //     isMoving = true;
@@ -53,7 +53,7 @@ public class NoteObject : MonoBehaviour
 
                 // OnTriggerStay2D();
 
-                theSR.sprite = successImage;
+                theSR.sprite = successArrow;
 
                 GameManager.instance.NoteHit();
                 
